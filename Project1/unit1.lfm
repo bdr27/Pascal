@@ -1,0 +1,28 @@
+object Form1: TForm1
+  Left = 243
+  Height = 240
+  Top = 218
+  Width = 320
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '1.0.14.0'
+  object Pressy: TButton
+    Left = 114
+    Height = 25
+    Top = 43
+    Width = 75
+    Caption = 'Press'
+    OnClick = PressyClick
+    TabOrder = 0
+  end
+  object Closer: TButton
+    Left = 220
+    Height = 25
+    Top = 209
+    Width = 75
+    Caption = 'Close'
+    OnClick = CloserClick
+    TabOrder = 1
+  end
+end
