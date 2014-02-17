@@ -10,12 +10,10 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="Lesson2_Program1"/>
         <IsVisibleTab Value="True"/>
-        <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
         <TopLine Value="1"/>
         <CursorPos X="26" Y="1"/>
-        <UsageCount Value="20"/>
-        <Loaded Value="True"/>
+        <UsageCount Value="21"/>
       </Unit0>
       <Unit1>
         <Filename Value="..\lesson2_program2.pas"/>
@@ -23,13 +21,10 @@
         <UnitName Value="Lesson2_Program2"/>
         <WindowIndex Value="0"/>
         <TopLine Value="1"/>
-        <CursorPos X="34" Y="12"/>
-        <UsageCount Value="20"/>
+        <CursorPos X="5" Y="16"/>
+        <UsageCount Value="21"/>
       </Unit1>
     </Units>
-    <General>
-      <ActiveWindowIndexAtStart Value="0"/>
-    </General>
     <JumpHistory Count="0" HistoryIndex="-1"/>
   </ProjectSession>
 </CONFIG>

@@ -6,16 +6,21 @@
     <BuildModes Active="Default"/>
     <Units Count="1">
       <Unit0>
-        <Filename Value="Lesson2_Program3.lpr"/>
+        <Filename Value="Lesson3_Program1.lpr"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="Lesson2_Program3"/>
+        <UnitName Value="Lesson3_Program1"/>
         <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="8"/>
-        <CursorPos X="25" Y="16"/>
+        <TopLine Value="1"/>
+        <CursorPos X="16" Y="23"/>
         <UsageCount Value="20"/>
+        <Loaded Value="True"/>
       </Unit0>
     </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
     <JumpHistory Count="0" HistoryIndex="-1"/>
   </ProjectSession>
 </CONFIG>
