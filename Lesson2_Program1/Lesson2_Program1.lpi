@@ -33,12 +33,17 @@
         <FormatVersion Value="1"/>
       </local>
     </RunParams>
-    <Units Count="1">
+    <Units Count="2">
       <Unit0>
         <Filename Value="Lesson2_Program1.lpr"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Lesson2_Program1"/>
       </Unit0>
+      <Unit1>
+        <Filename Value="..\lesson2_program2.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Lesson2_Program2"/>
+      </Unit1>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -49,6 +54,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value=".."/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Other>

@@ -4,7 +4,7 @@
     <PathDelim Value="\"/>
     <Version Value="9"/>
     <BuildModes Active="Default"/>
-    <Units Count="1">
+    <Units Count="2">
       <Unit0>
         <Filename Value="Lesson2_Program1.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -17,6 +17,15 @@
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit0>
+      <Unit1>
+        <Filename Value="..\lesson2_program2.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Lesson2_Program2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="34" Y="12"/>
+        <UsageCount Value="20"/>
+      </Unit1>
     </Units>
     <General>
       <ActiveWindowIndexAtStart Value="0"/>
