@@ -6,14 +6,14 @@
     <BuildModes Active="Default"/>
     <Units Count="1">
       <Unit0>
-        <Filename Value="Lesson4_Program1.lpr"/>
+        <Filename Value="Lesson4_Program2b.lpr"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="Lesson4_Program1"/>
+        <UnitName Value="Lesson4_Program2b"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="32"/>
-        <CursorPos X="23" Y="52"/>
+        <TopLine Value="1"/>
+        <CursorPos X="26" Y="1"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -21,15 +21,6 @@
     <General>
       <ActiveWindowIndexAtStart Value="0"/>
     </General>
-    <JumpHistory Count="2" HistoryIndex="1">
-      <Position1>
-        <Filename Value="Lesson4_Program1.lpr"/>
-        <Caret Line="51" Column="8" TopLine="25"/>
-      </Position1>
-      <Position2>
-        <Filename Value="Lesson4_Program1.lpr"/>
-        <Caret Line="53" Column="18" TopLine="31"/>
-      </Position2>
-    </JumpHistory>
+    <JumpHistory Count="0" HistoryIndex="-1"/>
   </ProjectSession>
 </CONFIG>

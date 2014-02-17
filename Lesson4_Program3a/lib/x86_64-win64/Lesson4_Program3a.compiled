@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <Compiler Value="C:\dev\lazarus\fpc\2.6.2\bin\x86_64-win64\fpc.exe" Date="1131443479"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -g -gl -vewnhi -FiC:\Users\brendan.russo\Documents\GitHub\Pascal\Lesson4_Program3a\lib\x86_64-win64 -FuC:\Users\brendan.russo\Documents\GitHub\Pascal\Lesson4_Program3a\ -FUC:\Users\brendan.russo\Documents\GitHub\Pascal\Lesson4_Program3a\lib\x86_64-win64\ -l Lesson4_Program3a.lpr"/>
+</CONFIG>
