@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="Lesson8_Program1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Lesson8_Program1"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="51" Y="11"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <JumpHistory Count="7" HistoryIndex="6">
+      <Position1>
+        <Filename Value="Lesson8_Program1.lpr"/>
+        <Caret Line="16" Column="54" TopLine="1"/>
+      </Position1>
+      <Position2>
+        <Filename Value="Lesson8_Program1.lpr"/>
+        <Caret Line="4" Column="5" TopLine="1"/>
+      </Position2>
+      <Position3>
+        <Filename Value="Lesson8_Program1.lpr"/>
+        <Caret Line="31" Column="11" TopLine="16"/>
+      </Position3>
+      <Position4>
+        <Filename Value="Lesson8_Program1.lpr"/>
+        <Caret Line="40" Column="20" TopLine="20"/>
+      </Position4>
+      <Position5>
+        <Filename Value="Lesson8_Program1.lpr"/>
+        <Caret Line="11" Column="40" TopLine="19"/>
+      </Position5>
+      <Position6>
+        <Filename Value="Lesson8_Program1.lpr"/>
+        <Caret Line="5" Column="42" TopLine="1"/>
+      </Position6>
+      <Position7>
+        <Filename Value="Lesson8_Program1.lpr"/>
+        <Caret Line="40" Column="20" TopLine="20"/>
+      </Position7>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>
