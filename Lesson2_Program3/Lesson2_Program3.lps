@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="Lesson2_Program3.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Lesson2_Program3"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="9" Y="12"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <JumpHistory Count="3" HistoryIndex="2">
+      <Position1>
+        <Filename Value="Lesson2_Program3.lpr"/>
+        <Caret Line="13" Column="43" TopLine="1"/>
+      </Position1>
+      <Position2>
+        <Filename Value="Lesson2_Program3.lpr"/>
+        <Caret Line="7" Column="42" TopLine="1"/>
+      </Position2>
+      <Position3>
+        <Filename Value="Lesson2_Program3.lpr"/>
+        <Caret Line="8" Column="39" TopLine="1"/>
+      </Position3>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>
