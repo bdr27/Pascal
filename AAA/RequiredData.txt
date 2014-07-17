@@ -129,7 +129,7 @@ EmailActivityByUserPrimaryDomain
 trEmail - address, tranRef, msgSize
 trTransactions - IsPassive, DateTime, ref, UserName, CostCentreDeptID, CostCentreDeptName, Units, Cost
 
-EmailActivityByDepartmentByPrimaryDomain
+EmailActivityByDepartmentByPrimaryDomain - Up To Here
 trEmail - address, tranRef, msgSize
 trTransactions - IsPassive, ref, UserName, CostCentreDeptID, DateTime, CostCentreDeptName, Units, Cost
 
