@@ -129,7 +129,7 @@ EmailActivityByUserPrimaryDomain
 trEmail - address, tranRef, msgSize
 trTransactions - IsPassive, DateTime, ref, UserName, CostCentreDeptID, CostCentreDeptName, Units, Cost
 
-EmailActivityByDepartmentByPrimaryDomain - Up To Here
+EmailActivityByDepartmentByPrimaryDomain
 trEmail - address, tranRef, msgSize
 trTransactions - IsPassive, ref, UserName, CostCentreDeptID, DateTime, CostCentreDeptName, Units, Cost
 
@@ -157,7 +157,7 @@ TelephoneExtnDetail-IncomingCalls
 trTelephone - tranRef, PabxID, Direction, ExtnId, CallType, DialledNumber, DateTime, Carrier, Country, Destination
 trTransactions - ref, DateTime, Duration, Cost
 
-TelephoneExtnDetail-AllCalls
+TelephoneExtnDetail-AllCalls - Up To Here
 trTelephone - tranRef, PabxID, ExtnId, CallType, DialledNumber, DateTime, Carrier, Country, Destination
 trTransactions - ref, DateTime, Duration, Cost
 
