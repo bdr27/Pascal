@@ -1,0 +1,210 @@
+AccountDetail
+trAccounts - ref, AccountID
+trSite - siteName, ref (links to trDivision, Division linked o trDept on divisionID)
+trTransactions - ref, DateTime, PriceGroupName, ReportedFlag, CodeRef, DateTime, UserName, CostCentreDeptID, Units, Credits, Rate, PriceGroupName, PriceLevelName, Cost, Charge, Remark, CodeRef
+trPrint - tranRef, ColorJob
+
+AccountSummary
+trAccounts - ref, AccountID
+trTransactions - ref, DateTime, PriceGroupName, CodeRef, SUM(Units), SUM(Cost), SUM(Charge), ReportedFlag, DateTime
+
+DepartmentTotalsSummaryByDevice
+trTransactions - ref, DateTime, CostCentreDeptID, CostCentreDeptName, PriceGroupName, SUM(Units)[Office,Personal,Charge,Total], SUM(Cost)[Office,Personal,Charge,Total], ReportedFlag
+
+OfficeDetail
+trOffice - officeID
+trTransactions - ref, DateTime, CodeID, PriceGroupName, DateTime, UserName, CostCentreDeptID, Units, Credits, Rate, PriceGroupName, PriceLevelName, Cost, Charge, Remark, CodeID, ReportedFlag
+trPrint - tranRef, ColorJob
+
+OfficeSummary
+trOffice - OfficeID
+trTransactions - CodeID, DateTime, PriceGroupName, PriceGroupName, SUM(Units), SUM(Cost), SUM(Charge), DateTime
+
+UserDetailByDept
+trTransactions - CostCentreDeptID, CostCentreDeptName, DateTime, UserName, PriceGroupName, Ref, DateTime, PriceLevelName, Rate, Units, Credits, Cost[Office,Personal,Charge], Remark
+trPrint - ColorJob, tranRef
+
+UserExceptions
+trUsers - UserName
+trTransactions - ref, DateTime, costCentreDeptID, CostCentreDeptName, UserName, PriceGroupName, Units, Cost
+trExceptions - tranRef
+
+UserExceptionsSummaryByDept
+trTransactions - ref, DateTime, CostCentreDeptID, CostCentreDeptName, UserName, MIN(DateTime), SUM(Units), SUM(Cost), DateTime
+trExceptions - tranRef
+
+UserTotalsSummary
+trUsers - UserName
+trTransactions - ref, DateTime, PriceGroupName, UserName, SUM(Units)[Office, Personal, Charge], SUM(Cost)[Office, Personal, Charge], PersonalPaidFlad, tranType
+
+CompanyBySiteSummary
+trPrint - BwPages, ColorPages, tranRef
+trAccount - AccountID, clientID
+trClient - ref, clientID
+
+DepartmentUser Summary - By Cost
+trTransactions - IsColor, Cost, DateTime, DepartmentName
+
+PrintUserUsageReport
+trPrint - tranRef, Document, Pages, copies, ColorPages, printer, computerName
+
+CopyFaxByDepartment
+trCopy - tranRef
+trFax - tranRef
+trTransactions - Ref, Cost, Charge, DateTime
+
+PhotocopierStationStatistics
+trTransactions - Units, Credit, DateTime
+
+FaxStationStatistics
+trFax - tranRef
+trTransactions - PriceLevelName, DateTime
+
+PrintUserByColourType
+trTransaction - Ref, UserName, DateTime
+trPrint - TranRef, BWPages, ColorPages / trPrintPageInfo - TranRef, IsColor, PageCount
+
+PrintDeviceByColourUsageReport
+trPrint - print, tranRef, BwPages, ColorPages
+trCopier - CopierName, tranRef
+trTransactions - ref, charge, DateTime
+
+PrinterUserSummary
+trTransactions - ref, UserName, IsPassive, Charge, Duration, DateTime
+trPrint - tranRef, pages, letterHeadCost
+trCopyPageInto - tranRef, PageCount, Cost
+trUsers - UserName
+
+PrinterDepartmentSummary
+trTransactions - ref, CostCentreDeptID, CostCentreDeptName, IsPassive, Duration, Charge, DateTime
+trPrint - tranRef, pages, letterHeadCost
+trCopyPageInto - tranRef, PageCount, Cost
+
+PrinterComputerSummary (why do you include copy?)
+trTransactions - ref, IsPassive, Duration, Charge, DateTime
+trPrint - tranRef, pages, letterHeadCost, computerName (How to get for copier)
+trCopyPageInto - tranRef, PageCount, Cost
+
+PrinterActivityByPrinter
+(Where printer info??)
+trPrint - tranRef, pages, printer
+trTransactions - ReportedFlag, ref, IsPassive, Duration, Charge, DateTime
+trCopyPageInto - tranRef, PageCount, Cost
+
+PrinterActivityByUser
+trPrint - tranRef, pages, printer
+trTransactions - CostCentreDeptID, DateTime, CostCentreDeptName, ReportedFlag, ref, IsPassive, Duration, Charge
+trCopyPageInto - tranRef, PageCount, Cost
+trUser - UserName
+
+PrinterActivityByUser
+trPrint - tranRef, pages, printer
+trTransactions - CostCentreDeptID, CostCentreDeptName, DateTime, ReportedFlag, ref, IsPassive, Duration, Charge
+trCopyPageInto - tranRef, PageCount, Cost
+trUser - UserName
+
+PrinterActivityByComputer
+trPrint - tranRef, pages, printer, computerName
+trTransactions - CostCentreDeptID, CostCentreDeptName, DateTime, ReportedFlag, ref, IsPassive, Duration, Charge
+trCopyPageInto - tranRef, PageCount, Cost
+trUser - UserName
+
+EmailUserSummary
+trTransactions - IsPassive, DateTime, ref, CostCentreDeptID, CostCentreDeptName, Units, Cost
+trEmail - tranRef, msgSize
+
+EmailDepartmentSummary
+trTransactions - IsPassive, DateTime, ref, CostCentreDeptID, CostCentreDeptName, Units, Cost
+trEmail - tranRef, msgSize
+
+EmailComputerSummart
+trEmail - tranRef, msgSize, computerName
+trTransactions - IsPassive, DateTime, ref, CostCentreDeptID, CostCentreDeptName, Units, Cost
+
+EmailActivityByPrimaryDomain
+trEmail - address, tranRef, msgSize
+trTransactions - IsPassive, DateTime, ref, CostCentreDeptID, CostCentreDeptName, Units, Cost
+
+EmailActivityByUserPrimaryDomain
+trEmail - address, tranRef, msgSize
+trTransactions - IsPassive, DateTime, ref, UserName, CostCentreDeptID, CostCentreDeptName, Units, Cost
+
+EmailActivityByDepartmentByPrimaryDomain
+trEmail - address, tranRef, msgSize
+trTransactions - IsPassive, ref, UserName, CostCentreDeptID, DateTime, CostCentreDeptName, Units, Cost
+
+EmailActivityByComputerByPrimaryDomain
+trEmail - address, tranRef, msgSize, computerName
+trTransactions - IsPassive, ref, UserName, CostCentreDeptID, CostCentreDeptName, Units, Cost, DateTime
+
+ScannerActivityByDeparmentByUser
+trScan - tranRef, ImageSize, PageCount
+trTransactions - IsPassive, ref, Units, Cost, DateTime
+
+ScannerActivityByScannerName
+trScan - tranRef, ImageSize, PageCount, ScannerName
+trTransactions - IsPassive, ref, Units, Cost, DateTime
+
+TelephoneExtnSummary
+trTelephone - tranRef, PabxId, ExtnId, CallType, Abandoned
+trTransactions - ref, DateTime
+
+TelephoneExtnDetail-OutgoingCalls
+trTelephone - tranRef, PabxID, Direction, ExtnId, CallType, DialledNumber, DateTime, Carrier, Country, Destination
+trTransactions - ref, DateTime, Duration, Cost
+
+TelephoneExtnDetail-IncomingCalls
+trTelephone - tranRef, PabxID, Direction, ExtnId, CallType, DialledNumber, DateTime, Carrier, Country, Destination
+trTransactions - ref, DateTime, Duration, Cost
+
+TelephoneExtnDetail-AllCalls
+trTelephone - tranRef, PabxID, ExtnId, CallType, DialledNumber, DateTime, Carrier, Country, Destination
+trTransactions - ref, DateTime, Duration, Cost
+
+TelephoneUserDetail-OutgoingCalls
+trUsers - UserName
+trTransactions - ref, DateTime, Duration, Cost
+trTelephone - tranRef, PabxID, ExtnId, CallType, DialledNumber, DateTime, Carrier, Country, Destination
+
+TelephoneUserDetail-IncomingCalls
+trUsers - UserName
+trTransactions - ref, DateTime, Duration, Cost
+trTelephone - tranRef, PabxID, Direction, ExtnId, CallType, DialledNumber, DateTime, Carrier, Country, Destination
+
+TelephoneCallDensity(%ofCalls)
+trTelephone - tranRef, CallType, Abandon, Direction
+trTransaction - ref, DateTime
+
+TelephoneCallDensity(NumOfCalls)
+trTelephone - tranRef, CallType, Abandon, Direction
+trTransaction - ref, DateTime
+
+TelephoneCallsWithLongestDuration
+trTransactions - Duration, UserName, DeptID, DateTime, Cost
+trTelephone - tranRef, CallType, Destination, DialledNumber
+
+TelephoneCallsWithHighestCost
+trTransactions - Duration, UserName, DeptID, DateTime, Cost
+trTelephone - tranRef, CallType, Destination, DialledNumber
+
+TelephoneAbandonedAndIncomingCallsAnalysis
+trTelephone - AnswerTime, AnswerRings, Direction, Abandoned
+
+TelephoneAbandonedCallsDetail
+trTelephone - tranRef, PabxID, AnswerTime, AnswerRings, Abandoned
+trTransactions - ref, DateTime
+
+TelephoneRouteUsageByTrunk
+trTransactions - ref, duration, cost, DateTime
+TrTelephone - tranRef, PabxID, RouteNumber
+
+TelephoneRouteUsageByTrunk
+trTransactions - ref, DateTime duration, cost
+TrTelephone - tranRef, PabxID, RouteNumber, TrunkNumber
+
+TelephoneCallWatchDetail
+trTransactions - ref, DateTime, duration, cost
+trTelephone - tranRef, (whatever this looks for)
+
+trTelephone - tranRef, DialledNumber, Destination
+trTransactions - ref, SUM(Total Cost)
