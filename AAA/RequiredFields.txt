@@ -12,6 +12,6 @@ trPrint - BwPages, ColorJob, ColorPages, ComputerName, Copies, Document, LetterH
 trPrintPageInfo - IsColor, PageCount, TranRef
 trSite - SiteID, SiteName
 trScan - ImageSize, PageCount, ScannerName, TranRef
-trTelephone - Abandoned, Carrier, CallType, Country, DateTime, Destination, DialledNumber, Direction, ExtnId, PabxId, TranRef
+trTelephone - Abandoned, AnswerRings, AnswerTime, Carrier, CallType, Country, DateTime, Destination, DialledNumber, Direction, ExtnId, PabxId, RouteNumber, TranRef, TrunkNumber
 trTransactions - Charge, CodeID, CodeRef, CodeRef, Cost, CostCenterDeptID, CostCenterDeptName, Credits, DateTime, Duration, IsColor, IsPassive, PersonalPaidFlag, PriceGroupName, PriceLevelName, Rate, Ref, Remark, ReportedFlag, TranType, Units, UserName
 trUsers - UserName

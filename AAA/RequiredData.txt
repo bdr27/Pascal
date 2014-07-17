@@ -157,7 +157,7 @@ TelephoneExtnDetail-IncomingCalls
 trTelephone - tranRef, PabxID, Direction, ExtnId, CallType, DialledNumber, DateTime, Carrier, Country, Destination
 trTransactions - ref, DateTime, Duration, Cost
 
-TelephoneExtnDetail-AllCalls - Up To Here
+TelephoneExtnDetail-AllCalls
 trTelephone - tranRef, PabxID, ExtnId, CallType, DialledNumber, DateTime, Carrier, Country, Destination
 trTransactions - ref, DateTime, Duration, Cost
 
@@ -180,7 +180,7 @@ trTelephone - tranRef, CallType, Abandon, Direction
 trTransaction - ref, DateTime
 
 TelephoneCallsWithLongestDuration
-trTransactions - Duration, UserName, DeptID, DateTime, Cost
+trTransactions - Duration, UserName, DeptID, DateTime, Cost ---Check DeptID---
 trTelephone - tranRef, CallType, Destination, DialledNumber
 
 TelephoneCallsWithHighestCost
